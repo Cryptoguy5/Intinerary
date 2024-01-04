@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerary</title>
+    <style>
+        body {
+            height: 100vh;
+            text-align: center;
+            padding: 5%;
+        }
+
+        .main {
+            height: 95%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(5, 1fr);
+            grid-template-rows: 1fr repeat(4, 2fr);
+            width: 100%;
+            height: 90%;
+            gap: 10px;
+            padding: 1%;
+            box-sizing: border-box;
+        }
+
+        p {
+            font-weight: bolder;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 60px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: blue;
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: midnightblue;
+            font-size: 32px;
+        }
+
+        .item {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .margin {
+            margin: 0;
+        }
+        
+        img {
+            height: 40px;
+            margin: 0;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .blue {
+            background-color: rgb(61, 61, 226);
+        }
+
+        .orange {
+            background-color: rgb(231, 174, 68);
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .green {
+            background-color: lightgreen;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        @media(max-width:680px) {
+            .main {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3, p {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+         <h1>Travel Ininerary</h1>
+         <h2>Trip Duration: 5 Days</h2>
+         <div class="grid">
+             <div class="item blue">
+               <h3>Days</h3>
+             </div>
+             <div class="item blue">
+                <h3>1</h3>
+              </div>
+              <div class="item blue">
+                <h3>2</h3>
+              </div>
+              <div class="item blue">
+                <h3>3</h3>
+              </div>
+              <div class="item blue">
+                <h3>4</h3>
+              </div>
+              <div class="item blue">
+                <h3>5</h3>
+              </div>
+              <div class="item orange column">
+                <h3 class="margin">Destination</h3>
+                <img src="./map.png" alt="map">
+              </div>
+              <div class="item orange column">
+                 <p class="margin">Welton Hotel</p>
+                  <p class="margin">(Book 2209)</p>
+               </div>
+               <div class="item orange column">
+                <p class="margin">The Atrium</p>
+                <p class="margin">Event Center</p>
+               </div>
+               <div class="item orange column">
+                <p class="margin">The Atrium</p>
+                <p class="margin">Event Center</p>
+               </div>
+               <div class="item orange column">
+                <p>The Axewell</p>
+               </div>
+               <div class="item orange">
+                <p>The Axewell</p>
+               </div>
+               <div class="item pink column">
+                <h3 class="margin">Food</h3>
+                <img src="./diet.png" alt="food">
+              </div>
+              <div class="item pink column">
+                 <p class="margin">The Garrison</p>
+                  <p class="margin">Winchester</p>
+                  <p class="margin">Pub,</p>
+                  <p class="margin">Ali Khans</p>
+                  
+               </div>
+               <div class="item pink column">
+                <p class="margin">Lunch &</p>
+                <p class="margin">Dinner</p>
+                <p class="margin">Provided</p>
+               </div>
+               <div class="item pink column">
+                <p class="margin">The Haluman</p>
+                <p class="margin">Magic Show</p>
+               </div>
+               <div class="item pink column">
+                <p class="margin">Julianna's</p>
+                <p class="margin">Mario Italian</p>
+                <p class="margin">The Hot Wok</p>
+               </div>
+               <div class="item pink">
+                <p>The Captian's</p>
+               </div>
+               <div class="item column green">
+                <h3 class="margin">Entertainment</h3>
+                <img src="./popcorn.png" alt="Entertainment">
+              </div>
+              <div class="item green column">
+                 <p class="margin">Jazz Festival</p>
+                  <p class="margin">Monero</p>
+               </div>
+               <div class="item green column">
+                <p class="margin">Country</p>
+                <p class="margin">Comedy Club</p>
+               </div>
+               <div class="item green column">
+                <p class="margin">Country</p>
+                <p class="margin">Comedy Club</p>
+               </div>
+               <div class="item green column">
+                <p class="margin">Modern Internet</p>
+                <p class="margin">Marketing Event</p>
+               </div>
+               <div class="item green column">
+                <p class="margin">Modern Internet</p>
+                <p class="margin">Marketing Event</p>
+               </div>
+               <div class="item column cyan">
+                <h3 class="margin">Transportation</h3>
+                <img src="./vehicles.png" alt="Transportation">
+              </div>
+              <div class="item cyan column">
+                 <p class="margin">Transport,</p>
+                  <p class="margin">Hotel Cab</p>
+               </div>
+               <div class="item cyan column">
+                <p class="margin">Public</p>
+                <p class="margin">Transport,</p>
+                <p class="margin">Cab</p>
+               </div>
+               <div class="item cyan column">
+                <p class="margin">Public</p>
+                <p class="margin">Transport,</p>
+                <p class="margin">Cab</p>
+               </div>
+               <div class="item cyan column">
+                <p class="margin">Public</p>
+                <p class="margin">Transport,</p>
+                <p class="margin">Cab</p>
+               </div>
+               <div class="item cyan column">
+                <p class="margin">Public</p>
+                <p class="margin">Transport,</p>
+                <p class="margin">Cab</p>
+               </div>
+         </div>
+    </div>
+</body>
+</html>
